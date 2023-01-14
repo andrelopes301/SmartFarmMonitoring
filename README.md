@@ -2,7 +2,7 @@
 # Smart Farm Monitoring
 
 
-A Smart Irrigation System that uses Docker, a weather API and a mobile app to improve water efficiency in agriculture by calculating and supplying water based on sensor data and weather forecast, with real-time monitoring and alerts via mobile app.
+A Smart Irrigation System that uses Docker, a weather API and an android mobile app to improve water efficiency in agriculture by calculating and supplying water based on sensor data and weather forecast, with real-time monitoring and alerts via mobile app.
 
 The system architecture can be seen in the included diagram, showing how all the components interact and communicate with each other.
 
