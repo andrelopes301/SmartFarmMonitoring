@@ -13,19 +13,3 @@ services:
     command: python3 -u  ./script_notifications.py
     env_file:
       - environment.env
-
-  sensors1:
-    container_name: sensors-1672164680888
-    build: ./docker/sensors
-    command: python3 -u ./script_sensors.py
-    environment:
-      USER_EMAIL: "andre@gmail.com"
-      PLANTATION_ID: "1672164680888"
-
-  notifications1:
-    container_name: notifications-1672164680888
-    build: ./docker/notifications
-    command: python3 -u ./script_notifications.py
-    environment:
-        USER_EMAIL: "andre@gmail.com"
-        PLANTATION_ID: "1672164680888"
