@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="20dp"
+    >
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_line"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center|top"
+        app:tint="@color/primaryColor" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingVertical="50dp"
+        >
+
+        <!-- Bottom sheet contents. -->
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/plantationName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:hint="Plantation name"
+            android:inputType="text"
+            android:textColor="#C1171616"
+            android:textSize="18sp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColorHint="#BDB7B7"
+            app:backgroundTint="@color/primaryColor"
+            android:layout_marginBottom="24dp"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginBottom="24dp"
+            app:backgroundTint="@color/primaryColor"
+            android:foregroundTint="@color/primaryColor"
+            app:boxStrokeWidth="1.5dp"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/plantationType"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="none"
+                android:text="Choose your plantation"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="16sp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addPlantation"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="64dp"
+            app:backgroundTint="@color/primaryColor"
+            app:cornerRadius="8dp"
+            android:text="Add"
+            android:fontFamily="@font/roboto_bold"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+</FrameLayout>
+

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/backgroundColor"
+    >
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:layout_gravity="center"
+            app:indicatorColor="@color/textColor"
+            app:trackThickness="6dp"
+            android:alpha="0.8"
+            app:trackColor="@color/primaryColor"
+            android:visibility="visible"/>
+
+
+
+    </FrameLayout>
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        app:fabCradleMargin="20dp"
+        app:backgroundTint="@color/primaryColor"
+        app:elevation="4dp"
+        app:fabCradleVerticalOffset="15dp"
+        app:fabCradleRoundedCornerRadius="40dp"
+        android:layout_gravity="bottom"
+        app:fabAlignmentMode="center"
+        app:fabAnimationMode="scale"
+        app:hideOnScroll="false"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:contentInsetStart="0dp"
+        >
+
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="6dp"
+            android:background="@android:color/transparent"
+            app:menu="@menu/bottom_menu_nav"
+            android:outlineSpotShadowColor="@android:color/transparent"/>    />
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        app:layout_anchor="@+id/bottomAppBar"
+        app:fabSize="normal"
+        app:tint="@color/colorWhite"
+        app:backgroundTint="@color/primaryColor"
+        app:borderWidth="0dp"
+        app:rippleColor="#A0D1A2"
+        />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

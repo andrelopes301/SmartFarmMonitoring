@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    >
+
+
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/itemView"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/lettuce_farm"
+        android:contentDescription="TODO" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/ItemViewLL"
+        android:layout_marginTop="190dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:cardCornerRadius="12dp"
+        app:strokeWidth="0dp"
+        app:cardElevation="1dp"
+        android:layout_marginBottom="-10dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#5FAA62"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="18dp"
+                android:gravity="end">
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_italic"
+                    android:text="@string/last_update"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginEnd="7dp"
+                    android:textSize="14sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/lastTimeUpdated"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold_italic"
+                    tools:text="14 June 2019, 13:18:08"
+                    android:gravity="end"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/statusHealthCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#F57C00"
+                app:cardElevation="16dp"
+                app:cardCornerRadius="8dp"
+                app:strokeWidth="0dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginVertical="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.0"
+                        android:layout_gravity="top"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_marginBottom="4dp"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="@string/health"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="20sp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/statusHealthText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:fontFamily="@font/roboto_black"
+                            tools:text="Very Low"
+                            android:gravity="end"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="24sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginHorizontal="16dp"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/ic_info"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="8dp"
+                            />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/statusHealthDescriptionText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            tools:text="Your plantation moisture content is very high!"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <LinearLayout
+                android:id="@+id/detailsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="18dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="#3CF1EBF1"
+                        app:cardElevation="0dp"
+                        app:strokeWidth="0dp"
+                        android:layout_weight="1.0"
+                        app:cardCornerRadius="8dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_marginVertical="8dp"
+                            >
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/temperature"
+                                app:tint="@color/colorWhite"
+                                android:layout_gravity="center"
+                                />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"/>
+
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:text="Temperature"
+                                android:textColor="#252B4A"
+                                android:gravity="center"
+                                android:textSize="16sp" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"/>
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/temperature"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_black"
+                                tools:text="24ºC"
+                                android:textColor="#252B4A"
+                                android:gravity="center"
+                                android:textSize="24sp" />
+
+                        </LinearLayout>
+
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"/>
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="#3CF1EBF1"
+                        app:strokeWidth="0dp"
+                        app:cardElevation="0dp"
+                        android:layout_weight="1.0"
+                        app:cardCornerRadius="8dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_marginVertical="8dp"
+                            >
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/humidity"
+                                android:layout_gravity="center"
+                                app:tint="@color/colorWhite" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"/>
+
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:text="Humidity"
+                                android:textColor="#252B4A"
+                                android:gravity="center"
+                                android:textSize="16sp" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"/>
+
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/humidity"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_black"
+                                android:gravity="center"
+                                tools:text="21%"
+                                android:textColor="#252B4A"
+                                android:textSize="24sp" />
+
+                        </LinearLayout>
+
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="#3CF1EBF1"
+                        app:cardElevation="0dp"
+                        app:strokeWidth="0dp"
+                        android:layout_weight="1.0"
+                        app:cardCornerRadius="8dp"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_marginVertical="8dp"
+                            >
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/moisture"
+                                app:tint="@color/colorWhite"
+                                android:layout_gravity="center"
+                                />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"/>
+
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:text="Moisture"
+                                android:textColor="#252B4A"
+                                android:gravity="center"
+                                android:textSize="16sp" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"/>
+
+
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/moisture"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_black"
+                                tools:text="18%"
+                                android:textColor="#252B4A"
+                                android:gravity="center"
+                                android:textSize="24sp" />
+
+                        </LinearLayout>
+
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"/>
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="#3CF1EBF1"
+                        app:strokeWidth="0dp"
+                        app:cardElevation="0dp"
+                        android:layout_weight="1.0"
+                        app:cardCornerRadius="8dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_marginVertical="8dp"
+                            >
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/light"
+                                android:layout_gravity="center"
+                                />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"/>
+
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:text="Light"
+                                android:textColor="#252B4A"
+                                android:gravity="center"
+                                android:textSize="16sp" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"/>
+
+
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/light"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_black"
+                                tools:text="65%"
+                                android:textColor="#252B4A"
+                                android:gravity="center"
+                                android:textSize="24sp" />
+
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#3CF1EBF1"
+                app:cardElevation="0dp"
+                app:strokeWidth="0dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="18dp"
+                android:paddingBottom="150dp"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:minHeight="50dp"
+                    android:layout_marginVertical="20dp"
+                    android:layout_marginHorizontal="32dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.3"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_black"
+                            android:text="Smart Irrigation System"
+                            android:textColor="@color/textColor"
+                            android:paddingBottom="4dp"
+                            android:textSize="20sp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/switchSmartIrrigationSystemDescription"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            tools:text="@string/water_off"
+                            android:textColor="#252B4A"
+                            android:paddingEnd="30dp"
+                            android:textSize="14sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.8"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+
+                        <com.google.android.material.switchmaterial.SwitchMaterial
+                            android:id="@+id/switchSmartIrrigationSystem"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:elevation="10dp"
+                            android:layout_gravity="center"
+                            app:thumbTint="#FFFFFF"
+                            app:trackTint="@color/textColor"
+                            app:switchMinWidth="60dp"
+                            app:showText="false"
+                            android:checked="false"
+                            app:splitTrack="false"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#08689C"
+            android:minHeight="100dp"
+            app:cardCornerRadius="0dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            app:strokeWidth="0dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:minHeight="50dp"
+                android:layout_marginVertical="20dp"
+                android:layout_marginHorizontal="32dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_black"
+                        android:text="Water Pump"
+                        android:textColor="@color/colorWhite"
+                        android:paddingBottom="4dp"
+                        android:textSize="20sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                      android:id="@+id/switchWaterPumpDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/manual_water_on"
+                        android:textColor="@color/colorWhite"
+                        android:lines="2"
+                        android:maxLines="2"
+                        android:paddingEnd="30dp"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="0.8"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switchWaterPump"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="10dp"
+                        android:layout_gravity="center"
+                        app:thumbTint="#FFFFFF"
+                        app:trackTint="#56FFFFFF"
+                        app:switchMinWidth="60dp"
+                        app:showText="false"
+                        android:checked="true"
+                        app:splitTrack="false"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </com.google.android.material.card.MaterialCardView>
+</FrameLayout>
+</ScrollView>

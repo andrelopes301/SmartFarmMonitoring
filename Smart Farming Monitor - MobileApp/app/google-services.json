@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "285951997888",
+    "project_id": "smart-farming-monitor",
+    "storage_bucket": "smart-farming-monitor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:285951997888:android:041aef7a35f9c4b0d27a25",
+        "android_client_info": {
+          "package_name": "com.ipv.farmmonitor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "285951997888-fkerct9jv3s9n1mt4pn5kbpaip31vcp7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClvwGS1Uyfft_vpZ9S14ISgJBL2brLihM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "285951997888-fkerct9jv3s9n1mt4pn5kbpaip31vcp7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
