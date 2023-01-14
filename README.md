@@ -56,7 +56,7 @@ This project uses the following dependencies:
 
 ## Sources
 
-This project was developed for a research paper, for the subject "Intelligent Systems Integration" in Instituto Politécnico de Viseu – Escola Superior de Tecnologia e Gestão de Viseu
+This project was developed for a research paper, for the subject "Intelligent Systems Integration" in Instituto Politécnico de Viseu – Escola Superior de Tecnologia e Gestão de Viseu.
 
 ## License
 
