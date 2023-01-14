@@ -1,9 +1,7 @@
 
 # Smart Farm Monitoring
 
-This project is a smart irrigation system designed to improve water efficiency in agriculture. The system utilizes various technologies such as Docker containers, a weather API, and a mobile application to enhance the functionality and user interactivity.
-This system uses data from humidity, light, moisture, and temperature sensors, as well as weather API to calculate the amount of water a plantation needs. If soil moisture falls below a certain level and no rain is forecasted, the system will water the plantation and notify the user. All collected data is stored in a database and can be accessed through the mobile app to check the real-time health of the plantation and receive alerts if anything is abnormal.
-
+A smart irrigation system that uses Docker, weather API, mobile app to improve water efficiency in agriculture by calculating and supplying water based on sensor data and weather forecast, with real-time monitoring and alerts via mobile app.
 
 The system architecture can be seen in the included diagram, showing how all the components interact and communicate with each other.
 
