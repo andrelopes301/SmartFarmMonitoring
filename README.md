@@ -12,7 +12,7 @@ This Github project is a smart irrigation system designed to improve water effic
 
 ### Mobile App Screens
 
-<p align="center">
+<p>
  
    <img src="https://i.ibb.co/zGbtGpm/splash.png" width="15%" >
    <img src="https://i.ibb.co/hyS7czS/homepage.png" width="15%" >
