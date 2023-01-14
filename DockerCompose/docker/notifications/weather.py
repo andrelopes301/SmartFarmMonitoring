@@ -6,8 +6,8 @@ import requests
 import time
 
 
-# Replace YOUR_API_KEY with your actual API key
-api_key = '0628a3d6c620b3b01ca96fad6bb3939f'
+
+api_key = # Place here you're accuweather API KEY
 
 # Specify the location for which you want to get the forecast
 city_id = 2732265  # Viseu
