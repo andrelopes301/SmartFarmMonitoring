@@ -16,7 +16,7 @@ This Github project is a smart irrigation system designed to improve water effic
   <div style="display: inline-block;">
     #### System Architecture
     <p>
-      <img src="https://i.ibb.co/KFWG9Mw/architecture.png" width="25%" >
+      <img src="https://i.ibb.co/KFWG9Mw/architecture.png" width="35%" >
      </p>
   </div>
 </div>
