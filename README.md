@@ -18,16 +18,19 @@ These instructions will get you a copy of the project up and running on your loc
 
 1.  Clone the repository to your local machine:
 
-Copy code
+  `git clone https://github.com/andrelopes301/Smart-Farm-Monitoring.git`
 
-`git clone https://github.com/andrelopes301/Smart-Farm-Monitoring.git`
+3.  Add your accuWeather APIKey in the weather.py file.
+4.  Connect your device or create an emulator.
+5.  Build and run the mobile application in Android Studio.
+6.  Replace the USER_EMAIL and PLANTATION_ID in the environment.env, after creating a
+plantation in the mobile app, for test purposes.
+7.  Build the Docker containers by running the following command in the project directory:
 
-2.  Build the Docker containers by running the following command in the project directory:
+  `docker-compose up --build`
 
-`docker-compose up --build`
+7. Check the real-time changes in the mobile app.
 
-3.  Connect your device or create an emulator
-4.  Build and run the mobile application in Android Studio
 
 ## Dependencies
 
