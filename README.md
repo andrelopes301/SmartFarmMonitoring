@@ -1,7 +1,7 @@
 
 # Smart Farm Monitoring
 
-This Github project is a smart irrigation system designed to improve water efficiency in agriculture. The system utilizes various technologies such as Docker containers, a weather API, and a mobile application to enhance the functionality and user interactivity. The system architecture can be seen in the included diagram, showing how all the components interact and communicate with each other.
+This project is a smart irrigation system designed to improve water efficiency in agriculture. The system utilizes various technologies such as Docker containers, a weather API, and a mobile application to enhance the functionality and user interactivity. The system architecture can be seen in the included diagram, showing how all the components interact and communicate with each other.
 
 ### Mobile App Screens / System Architecture
 <p>
