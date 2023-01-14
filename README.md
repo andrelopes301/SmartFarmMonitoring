@@ -4,21 +4,22 @@
 This Github project is a smart irrigation system designed to improve water efficiency in agriculture. The system utilizes various technologies such as Docker containers, a weather API, and a mobile application to enhance the functionality and user interactivity. The system architecture can be seen in the included diagram, showing how all the components interact and communicate with each other.
 
 
-#### System Architecture
-<p>
-  <img src="https://i.ibb.co/KFWG9Mw/architecture.png" width="50%" >
- </p>
-
-
-### Mobile App Screens
-
-<p>
- 
-   <img src="https://i.ibb.co/zGbtGpm/splash.png" width="15%" >
-   <img src="https://i.ibb.co/hyS7czS/homepage.png" width="15%" >
-   <img src="https://i.ibb.co/F5yW3CF/plantation.png" width="15%" >
- </p>
-
+<div>
+  <div>
+    ### Mobile App Screens
+    <p>
+      <img src="https://i.ibb.co/zGbtGpm/splash.png" width="15%" >
+      <img src="https://i.ibb.co/hyS7czS/homepage.png" width="15%" >
+      <img src="https://i.ibb.co/F5yW3CF/plantation.png" width="15%" >
+    </p>
+  </div>
+  <div>
+    #### System Architecture
+    <p>
+      <img src="https://i.ibb.co/KFWG9Mw/architecture.png" width="50%" >
+     </p>
+  </div>
+</div>
 
 ## Getting Started
 
