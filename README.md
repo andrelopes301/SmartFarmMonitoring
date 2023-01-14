@@ -20,7 +20,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 Copy code
 
-`git clone https://github.com/[username]/SmartFarmMonitoring.git`
+`git clone https://github.com/andrelopes301/Smart-Farm-Monitoring.git`
 
 2.  Build the Docker containers by running the following command in the project directory:
 
