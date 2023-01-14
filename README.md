@@ -23,8 +23,8 @@ These instructions will get you a copy of the project up and running on your loc
 3.  Add your accuWeather APIKey in the weather.py file.
 4.  Connect your device or create an emulator.
 5.  Build and run the mobile application in Android Studio.
-6.  Replace the USER_EMAIL and PLANTATION_ID in the environment.env, after creating a
-plantation in the mobile app, for test purposes.
+6.  Add a plantation in the mobile app, for test purposes.
+7.  Replace the USER_EMAIL and PLANTATION_ID in the environment.env file, inside the Docker Compose folder.
 7.  Build the Docker containers by running the following command in the project directory:
 
   `docker-compose up --build`
