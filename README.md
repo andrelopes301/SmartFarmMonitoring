@@ -40,7 +40,7 @@ This project uses the following dependencies:
 
 -   Docker: for creating and managing the containers used in the system
 -   Firebase Firestore: a cloud-based NoSQL database that stores and syncs data in real-time
--   Firebase SDK: for interacting with Firestore and sending notifications
+-   Firebase SDK: for interacting with Firestore, Firebase Authentication, and Firebase Messaging
 -   AccuWeather API: for gathering forecasted weather data
 
 ## Features
@@ -50,11 +50,11 @@ This project uses the following dependencies:
 -   The system utilizes Firestore to store and retrieve sensor data, allowing for real-time updates.
 -   The system uses a Python script to generate sensor data, making the system more accurate.
 -   The system uses Docker containers to separate the various functionalities and improve scalability and maintainability.
--   The system uses AccuWeather API to gather the forecasted weather data
+-   The system uses AccuWeather API to gather the forecasted weather data.
 
 ## Sources
 
-This project was developed for a research project in the field of agriculture and water conservation.
+This project was developed for a research paper, for the subject "Intelligent Systems Integration" in Instituto Politécnico de Viseu – Escola Superior de Tecnologia e Gestão de Viseu
 
 ## License
 
