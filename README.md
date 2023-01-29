@@ -9,11 +9,13 @@ The system architecture can be seen in the included diagram, showing how all the
 
 ### Mobile App Screens / System Architecture
 <p>
-  <img src="https://i.ibb.co/zGbtGpm/splash.png" width="15%" >
-  <img src="https://i.ibb.co/hyS7czS/homepage.png" width="15%" >
+<a href="https://ibb.co/8b9sLb4"><img src="https://i.ibb.co/68Fw78J/farm-list.png" alt="farm-list" border="0"></a>
+<a href="https://ibb.co/jM8zxbj"><img src="https://i.ibb.co/WyH0dGR/splash1.png" alt="splash1" border="0"></a>
   <img src="https://i.ibb.co/F5yW3CF/plantation.png" width="15%" >
   <img src="https://i.ibb.co/KFWG9Mw/architecture.png" width="45%">
  </p>
+
+
 
 
 ## Getting Started
