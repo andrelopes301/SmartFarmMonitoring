@@ -10,7 +10,7 @@ The system architecture can be seen in the included diagram, showing how all the
 ### Mobile App Screens / System Architecture
 
 <p>
-  <img src="https://i.ibb.co/WyH0dGR/splash1.png" width="15%">
+  <img src="https://raw.githubusercontent.com/andrelopes301/SmartFarmMonitoring/main/Smart%20Farming%20Monitor%20-%20MobileApp/splash1.png" width="15%">
   <img src="https://i.ibb.co/68Fw78J/farm-list.png"  width="15%">
   <img src="https://i.ibb.co/F5yW3CF/plantation.png"  width="15%">
   <img src="https://i.ibb.co/KFWG9Mw/architecture.png"  width="45%">
