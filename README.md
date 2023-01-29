@@ -8,32 +8,13 @@ The system architecture can be seen in the included diagram, showing how all the
 
 
 ### Mobile App Screens / System Architecture
-<style>
-  .responsive-img-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .responsive-img-container img {
-    width: 100%;
-    max-width: 15%;
-    margin: 10px;
-  }
-  
-  @media (max-width:768px) {
-    .responsive-img-container img {
-      max-width: 45%;
-    }
-  }
-</style>
 
-<div class="responsive-img-container">
-  <img src="https://i.ibb.co/WyH0dGR/splash1.png">
-  <img src="https://i.ibb.co/68Fw78J/farm-list.png">
-  <img src="https://i.ibb.co/F5yW3CF/plantation.png">
-  <img src="https://i.ibb.co/KFWG9Mw/architecture.png">
-</div>
+<p>
+  <img src="https://i.ibb.co/WyH0dGR/splash1.png" width="15%">
+  <img src="https://i.ibb.co/68Fw78J/farm-list.png"  width="15%">
+  <img src="https://i.ibb.co/F5yW3CF/plantation.png"  width="15%">
+  <img src="https://i.ibb.co/KFWG9Mw/architecture.png"  width="45%">
+<p>
 
 
 
