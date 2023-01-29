@@ -10,10 +10,10 @@ The system architecture can be seen in the included diagram, showing how all the
 ### Mobile App Screens / System Architecture
 
 <p>
-  <img src="https://raw.githubusercontent.com/andrelopes301/SmartFarmMonitoring/main/Smart%20Farming%20Monitor%20-%20MobileApp/splash1.png" width="15%">
-  <img src="https://raw.githubusercontent.com/andrelopes301/SmartFarmMonitoring/main/Smart%20Farming%20Monitor%20-%20MobileApp/farm%20list.png"  width="15%">
+  <img src="https://github.com/andrelopes301/SmartFarmMonitoring/blob/main/Smart%20Farming%20Monitor%20-%20MobileApp/splash1.png" width="15%">
+  <img src="https://github.com/andrelopes301/SmartFarmMonitoring/blob/main/Smart%20Farming%20Monitor%20-%20MobileApp/farm%20list.png"  width="15%">
   <img src="https://github.com/andrelopes301/SmartFarmMonitoring/blob/main/Smart%20Farming%20Monitor%20-%20MobileApp/plantationDetails.png"  width="15%">
-  <img src="https://raw.githubusercontent.com/andrelopes301/SmartFarmMonitoring/main/Smart%20Farming%20Monitor%20-%20MobileApp/Architecture.png"  width="45%">
+  <img src="https://github.com/andrelopes301/SmartFarmMonitoring/blob/main/Smart%20Farming%20Monitor%20-%20MobileApp/Architecture.png"  width="45%">
 <p>
 
 
